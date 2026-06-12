@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Book App</title>
+  </head>
+  <body>
+    <div class="recipe-app" style="max-width: 600px; margin: 40px auto; padding: 20px; font-family: sans-serif;">
+      <h1> My Recipe Book</h1>
+      
+      <form id="recipeEntryForm" style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;">
+        <input type="text" id="recipeTitle" placeholder="Recipe Title" required style="padding: 8px;" />
+        <textarea id="ingredients" placeholder="Enter ingredients (one per line)" required style="padding: 8px; height: 80px;"></textarea>
+        <textarea id="instructions" placeholder="Enter cooking instructions" required style="padding: 8px; height: 80px;"></textarea>
+        <button type="submit" style="padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; font-weight: bold;">Add Recipe</button>
+      </form>
+    
+      <div id="recipeContainer"></div>
+    
+      <button id="clearRecipesButton" style="padding: 10px; background-color: #ff4d4d; color: white; border: none; cursor: pointer; margin-top: 20px;">Clear All Recipes</button>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
